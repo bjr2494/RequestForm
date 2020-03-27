@@ -31,7 +31,7 @@ class App extends React.Component {
     handleClickAdd() {
       
         this.setState((prevState) => {
-             this.state.count = prevState.count + 1;
+            this.setState({count: prevState.count + 1})
             this.setState({hasRequests: true})
         })
     }
